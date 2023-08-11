@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+  
+
+</head>
+<body>
+    <div class="fixed w-full p-5 text-center">
+        <p id="succ-msg" class="font-bold text-2xl bg-green-400 p-2 text-green-900 hidden">Login Successfull</p>
+        
+    </div>
+
+    <div class="fixed w-full p-5 text-center">
+        <p id="err-msg" class="font-bold text-2xl bg-red-400 p-2 text-red-900 hidden">Invalid Credentails</p>
+    </div>
+
+    <div class="conatainer h-screen flex flex-col justify-center items-center">
+
+        <form action="" class="p-10 bg-gray-300 rounded shadow-sm shadow-black w-[30%] flex flex-col justify-center items-center">
+            <img src="https://cdn-icons-png.flaticon.com/128/9915/9915561.png" alt="" class="w-10">
+            <h1 class="text-2xl font-bold mb-5">Login Account</h1>
+            <div class="mb-5">
+                <label for="username" >username</label>
+               <br>
+                <input type="text" name="username" id="username" class="mt-2 w-[300px] h-10 border-2 border-gray-600 bg-gray-200 rounded  focus:bg-white p-2" placeholder="xyz123..." required >
+            </div>
+            <div class="mb-5 relative">
+                <label for="password" class="">password</label>
+                
+                <br>
+                <input type="password" name="password" id="password" class="mt-2 w-[300px] h-10 border-2 border-gray-600 bg-gray-200 rounded  focus:bg-white p-2" placeholder="***********">
+
+                <input type="checkbox" name="" id="checkpassword" class="absolute bottom-3 right-2 w-4 h-4 cursor-pointer">
+                
+            </div>
+            
+            <div class="">
+                <input type="button" name="submit" id="login" value="Login" class="w-24 bg-gray-300 font-bold p-2 rounded shadow-sm shadow-black border-2 border-gray-700 hover:bg-gray-400 cursor-pointer">
+            </div>
+            <p>don't have an account click here to <a href="index.html" class="font-bold underline">register</a></p>
+        </form>
+
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
